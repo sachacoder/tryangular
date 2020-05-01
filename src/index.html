@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng" >
+    <head>
+
+        <title>Try Angular 1.5</title>
+        <script src="\js\angular.min.js"></script>
+        <script src="\js\angular-route.min.js"></script>
+        <!--script src="/js/angular.min.js"></script-->
+        <script src="\js\angular-resource.min.js"></script>
+            <!--script src="/js/angular.min.js.map"></script-->
+        <!--script src="/js/angular-route.min.js.map"></script-->
+        <!--script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script-->
+       
+        <script src="\js\app\app.module.js"></script>
+        <script src="\js\app\app.config.js"></script>
+
+        <script src="/js/app/blog-list/blog-list.module.js"></script>
+        <script src="/js/app/blog-list/blog-list.component.js"></script>
+        <script src="/js/app/blog-detail/blog-detail.module.js"></script>
+        <script src="/js/app/blog-detail/blog-detail.component.js"></script>
+
+        <style>
+            .new-class {
+                font-size: 72px;
+            }
+            .other-class {
+                font-size: 32px;
+            }
+            .new-class2 {
+                font-size: 120px;
+            }
+        </style>
+    </head>
+    <body ng-app='try'>
+        <!--h1 class="new-class" ng-class="{'other-class': name=='Justin', 
+        'new-class': font==120}">Hello, 
+            <span ng-if='name'>{{ name }}</span>
+            <spanng-if='!name' World></span>
+            !
+        </h1>
+        <input type="text" ng-model='name' />
+        <input type="text" ng-mode='font' placeholder="font"/-->
+        <div ng-view></div>
+    </body>
+</html>

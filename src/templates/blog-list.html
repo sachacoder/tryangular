@@ -1,0 +1,12 @@
+<div>
+    <h1>{{title}}</h1>
+    <div><button ng-click='someClickTest()'>Click Me!</button></div>
+</div>
+
+
+
+<ul>
+    <li ng-repeat='item in items'>
+        <a ng-href='/blog/{{ item.id}}'> {{ item.title}}  {{item.publishDate}}</a>
+    </li>
+</ul>
