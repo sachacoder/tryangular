@@ -16,7 +16,7 @@ component('blogList', {
             $scope.status = status;
         }
 
-        var promise = $http.get("http://www.mocky.io/v2/5eab785133000068007608b7");
+        var promise = $http.get("/data/data.json");
 
         promise.success(onSuccess);
         promise.error(onError);
